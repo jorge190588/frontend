@@ -7,7 +7,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Home  from '../../pages/Home/';
-import Birds from '../../pages/Birds/';
+import Birds from '../../pages/Birds';
+import Transition from '../../pages/Transition';
+import Keyframes from '../../pages/Keyframes';
 import {useStyles} from './Style';
 import VerticalMenu from './../VerticalMenu';
 
@@ -86,7 +88,9 @@ export default function Menu(props) {
             <div className={classes.drawerHeader} />
             <Switch>
                 <Route exact path="/"   component={Home}/>
-                <Route exact path="/birds"   component={Birds}/>
+                <Route exact path="/bird"   component={Birds}/>
+                <Route exact path="/transition"   component={Transition}/>
+                <Route exact path="/keyframes"   component={Keyframes}/>
             </Switch>
         </main>
     </div>
